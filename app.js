@@ -120,7 +120,7 @@ document.querySelector('#deleteExpense').addEventListener('click',async ()=>{
     title: 'Are you sure?',
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonText: 'Log out!',
+    confirmButtonText: 'Delete All!',
     cancelButtonText: 'Cancel!',
     reverseButtons: true
   }).then((result) => {
@@ -128,7 +128,7 @@ document.querySelector('#deleteExpense').addEventListener('click',async ()=>{
       Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Your Account has been Logout',
+        title: 'Deleted successfully',
         showConfirmButton: false,
         timer: 4000
       }).then( async() => {
